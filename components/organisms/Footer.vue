@@ -123,7 +123,6 @@ footer .networks ul {
     justify-content: center;
     gap: 1rem;
 }
-
 footer .networks svg {
     height: 5vh;
     aspect-ratio: 1/1;
