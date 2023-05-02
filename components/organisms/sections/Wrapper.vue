@@ -1,7 +1,7 @@
 <script setup>
 
 import Card from '~/components/molecules/Card.vue';
-
+import CardTest from '~/components/molecules/CardTest.vue';
 </script>
 
 
@@ -9,6 +9,7 @@ import Card from '~/components/molecules/Card.vue';
     <section>
         <h2>Mes projets</h2>
         <div class="container">
+            <CardTest />    
             <Card class="element"/>
             <Card class="element"/>
             <Card class="element"/>
@@ -30,7 +31,7 @@ section {
 section .container {
     display: grid;
     place-items: center;
-    column-gap: 5vw;
+    gap: 5vw;
     grid-template-columns: repeat(3, 1fr);
     padding: 2vh 5vw;
 }
