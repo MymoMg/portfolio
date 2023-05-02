@@ -1,0 +1,40 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary-color: #000;
+    --secondary-color: #ffffff;
+    --secondary-color-variant: #f1f1f1;
+    --header-height: 10vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--secondary-color-variant);
+    color: var(--primary-color);
+}
+
+section {
+    position: relative;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
