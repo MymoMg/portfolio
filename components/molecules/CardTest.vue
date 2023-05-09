@@ -1,12 +1,23 @@
+<script setup>
+
+import Icon from '../atoms/Icon.vue';
+
+const props = defineProps({
+  heading: String,
+  icon: String,
+})
+
+</script>
+
 <template>
-    <article>
-        <NuxtLink to="/" class="cardLink">
-            <div>
-                <img src="https://loremflickr.com/320/240?random=1"/>
-                <h3>Fils de Pute</h3>
-            </div>
-        </NuxtLink>
-    </article>
+  <article>
+    <NuxtLink to="/" class="cardLink">
+        <div>
+          <Icon :name="icon" class="icon"/>
+          <h3>{{ heading }}</h3>
+        </div>
+    </NuxtLink>
+  </article>
 </template>
 
 <style scoped>
@@ -17,44 +28,37 @@
   inherits: false;
 }
 
-
 .cardLink {
-    --clr-1: #052b2f;
-    --clr-2: #073438;
-    --clr-3: #0e4b50;
-    --clr-4: #2d8f85;
-    --clr-5: #637c54;
-    --conic-gradients: conic-gradient(from var(--gradient-angle),
-        var(--clr-3),
-        var(--clr-4),
-        var(--clr-5),
-        var(--clr-4),
-        var(--clr-3)
-    );
+  display: grid;
+  position: relative;
+  background-color: var(--secondary-color);
+  padding: 0.5rem;
+  border-radius: 20px;
+  width: 215px;
+  transform: scale(1);
+  box-shadow: 0 0 15px rgba(0,0,0, 0.55);
+  transition: transform .3s ease-in-out, box-shadow .4s;
+}
+.cardLink .icon {
 
-    display: grid;
-    position: relative;
-    background-color: var(--secondary-color);
-    width: 50%;
-    margin: 0 auto;
-    padding: 1rem;
-    border-radius: 10px;
-    transform: scale(1);
-    box-shadow: 0 0 10px rgba(0,0,0, 0.15);
-    transition: transform .3s ease-in-out, box-shadow .4s;
+  height: 5.5rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  transition: transform .5s;
 }
 
-
-.cardLink img{
-    transition: transform .5s;
-    margin-bottom: 1.5rem;
-    width: 55%;
+.cardLink h3 {
+  height: 4.5rem; 
+  display: grid;
+  padding: 0 5%;
+  place-items: center;
 }
+
 .cardLink > div {
     display: grid;
     place-items: center;
     position: relative;
-    padding: 3.5rem 1rem;     
+    padding: 3.5rem 1rem 2rem 1rem;     
     background-color: inherit;
     border-radius: inherit;
 }
@@ -64,7 +68,11 @@
   position: absolute;
   inset: -1px;
   z-index: -1;
-  background: var(--conic-gradients);
+  background: conic-gradient(from var(--gradient-angle),
+    var(--primary-accent-color),
+    var(--secondary-accent-color),
+    var(--primary-accent-color)
+  );
   border-radius: inherit;
   animation: rotation 2s linear infinite;
 }
@@ -72,15 +80,13 @@
 .cardLink > div::after {
   filter: blur(2px);
 }
-
-
 .cardLink:is(:hover, :focus) {
-    transform: scale(1.05);
-    box-shadow: 0 0 10px rgba(0,0,0, 0.20);
+  transform: scale(1.05);
 }
-.cardLink:is(:hover, :focus) img {
-    transform: scaleY(1.05);
+.cardLink:is(:hover, :focus) .icon {
+  transform: scaleY(1.05);
 }
+
 
 @keyframes rotation {
   0% {
