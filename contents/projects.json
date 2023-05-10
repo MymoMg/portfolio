@@ -1,8 +1,10 @@
 [
     {
-        "id": "portfolio",
-        "categorie" : "tests",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eum sequi praesentium aliquid officia voluptates dolore optio quod at sunt illo atque corporis cumque reprehenderit assumenda, eaque nobis odio? Ipsam?"
+        "id": "La_Part_du_Lion",
+        "categorie" : "ui_ux",
+        "description": "Réalisation d’une charte graphique pour une entreprise fictive : « La part du lion », un restaurant spécialisé dans la vente de plats africains.",
+        "images": ["public/projects/La_part_du_lion/Meriem_Mguil.png"],
+        "outils": ["Adobe Illustrator", "Photoshop", "inDesign"]
     },
     {
         "id": "fsp",
@@ -12,13 +14,11 @@
     {
         "id": "fdp",
         "categorie" : "testss",
-
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eum sequi praesentium aliquid officia voluptates dolore optio quod at sunt illo atque corporis cumque reprehenderit assumenda, eaque nobis odio? Ipsam?"
     },
     {
         "id": "black_M",
         "categorie" : "testsss",
-
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eum sequi praesentium aliquid officia voluptates dolore optio quod at sunt illo atque corporis cumque reprehenderit assumenda, eaque nobis odio? Ipsam?"
     }
 ]

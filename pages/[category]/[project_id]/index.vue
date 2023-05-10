@@ -2,9 +2,11 @@
 
 import projects from '@/contents/projects.json'
 
-const { id } = useRoute().params
+const { project_id, category } = useRoute().params
 
-const currentProject = projects.filter((project) => project.id && project.id === id);
+const currentProject = projects.filter((project) => 
+	project.categorie === category && project.id === project_id
+);
 const currentProjectData = currentProject[0] ? currentProject[0] : navigateTo("/");
 
 
@@ -12,7 +14,8 @@ const currentProjectData = currentProject[0] ? currentProject[0] : navigateTo("/
 
 <template>
 	<main>
-		<h1>{{ currentProjectData.id }}</h1>
+		{{ $route.href.split("/") }}
+		<h1>{{ currentProjectData.id.split("_").join(" ") }}</h1>
 		<p>{{  currentProjectData.description }}</p>
 	</main>
 </template>

@@ -7,7 +7,7 @@ const props = defineProps({
 </script>
 
 <template>
-    <svg v-if="name === 'UI'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 227 294.07">
+    <svg v-if="name === 'ui_ux'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 227 294.07">
         <defs>
             <linearGradient id="ui" x1="0" y1="92.39" x2="184.91" y2="92.39" gradientUnits="userSpaceOnUse">
                 <stop offset=".08" stop-color="#d75770"/>
@@ -42,7 +42,7 @@ const props = defineProps({
             <path d="m224.71,266.05c-6.13,0-7,2.31-7,6.54v7.44c0,8.26-5.35,11.94-12.07,11.94h-2.13v-6.58h.89c3.87,0,4.84-2.36,4.84-6.05v-6.74c0-5.37,2.03-9.23,7.28-10.09-5.43-.88-7.28-4.72-7.28-10.27v-6.73c0-3.75-1.38-6.25-5.02-6.25h-.71v-6.58h2.13c6.08,0,12.07,3.02,12.07,11.83v7.74c0,3.97.83,6.43,7,6.49v7.29Z" style="fill: url(#ui-10);"/>
         </g>
     </svg>
-    <svg v-else-if="name === 'Charte'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 271.18 195.7">
+    <svg v-else-if="name === 'chartre_graphique'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 271.18 195.7">
         <defs>
             <linearGradient id="charte" x1="86.82" y1="91.32" x2="248" y2="91.32" gradientUnits="userSpaceOnUse">
                 <stop offset=".08" stop-color="#d75770"/>
@@ -161,7 +161,7 @@ const props = defineProps({
             <circle cx="20" cy="154.39" r="20" style="fill: url(#charte_3); opacity: .64;"/>
         </g>
     </svg>
-    <svg v-else-if="name === 'Support'" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 122.63 179.85">
+    <svg v-else-if="name === 'support_visuel'" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 122.63 179.85">
         <defs>
             <linearGradient id="support" x1="0" y1="67.28" x2="122.63" y2="67.28" gradientUnits="userSpaceOnUse">
                 <stop offset=".08" stop-color="#d75770"/>
@@ -182,7 +182,7 @@ const props = defineProps({
             <path d="m106.1,179.85H14.57c-2.71,0-4.62-2.65-3.76-5.22l12.93-38.63c.54-1.62,2.06-2.71,3.76-2.71h66.68c1.74,0,3.28,1.13,3.79,2.8l11.92,38.63c.79,2.55-1.12,5.13-3.79,5.13Z" style="fill: url(#support-4);"/>
         </g>
     </svg>
-    <svg v-else-if="name === 'Photo'" class="photo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 217.98 152.21">
+    <svg v-else-if="name === 'photographie'" class="photo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 217.98 152.21">
         <defs>
             <linearGradient id="photo" x1="0" y1="86.91" x2="217.98" y2="86.91" gradientUnits="userSpaceOnUse">
             <stop offset=".08" stop-color="#d75770"/>
@@ -201,7 +201,7 @@ const props = defineProps({
             <path d="m32.53,0h51.77c1.61,0,2.91,1.3,2.91,2.91v19.87H29.62V2.91c0-1.61,1.3-2.91,2.91-2.91Z" style="fill: url(#photo-3);"/>
         </g>
     </svg>
-    <svg v-else-if="name === 'Alternance'" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 179 161.5">
+    <svg v-else-if="name === 'alternance'" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 179 161.5">
         <defs>
             <linearGradient id="alternance"  x1="0" y1="64.94" x2="179" y2="64.94" gradientUnits="userSpaceOnUse">
             <stop offset=".08" stop-color="#d75770"/>

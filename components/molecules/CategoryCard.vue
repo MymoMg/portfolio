@@ -3,18 +3,17 @@
 import Icon from '../atoms/Icon.vue';
 
 const props = defineProps({
-  heading: String,
-  icon: String,
+  category_name: String,
 })
 
 </script>
 
 <template>
   <article>
-    <NuxtLink to="/" class="cardLink">
+    <NuxtLink :to="`/${category_name}`" class="cardLink">
         <div>
-          <Icon :name="icon" class="icon"/>
-          <h3>{{ heading }}</h3>
+          <Icon :name="category_name" class="icon"/>
+          <h3 v-if="category_name">{{ category_name.split("_").join(" ") }}</h3>
         </div>
     </NuxtLink>
   </article>
@@ -52,6 +51,7 @@ const props = defineProps({
   display: grid;
   padding: 0 5%;
   place-items: center;
+  text-transform: uppercase;
 }
 
 .cardLink > div {

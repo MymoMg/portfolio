@@ -1,9 +1,16 @@
+<script setup>
+
+const props = defineProps({
+    project_name: String,
+})
+
+</script>
+
 <template>
     <article>
-        <NuxtLink to="/" class="cardLink">
+        <NuxtLink :to="`${$route.href}/${project_name}`" class="cardLink">
             <img src="https://loremflickr.com/320/240?random=1"/>
-            <h3>Fils de Pute</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id quas ea tenetur tempore qui dolores? Rerum consequuntur corporis inventore, non dolores officiis dolorem unde ipsam debitis quasi. Libero quo illo commodi dicta, error harum blanditiis maxime ab consectetur, tempora nisi beatae temporibus possimus assumenda quis iste sit, et consequuntur autem?</p>
+            <h3>{{project_name.split("_").join(" ")}}</h3>
         </NuxtLink>
     </article>
 </template>
