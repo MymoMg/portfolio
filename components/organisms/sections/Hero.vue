@@ -47,9 +47,6 @@ section > svg {
     position: absolute;
     z-index: -1;
     inset: 0;
-    filter: blur(10px);
-    user-select: none;
-    pointer-events: none;
 }
 
 section > svg path {

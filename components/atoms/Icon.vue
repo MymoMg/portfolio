@@ -42,7 +42,7 @@ const props = defineProps({
             <path d="m224.71,266.05c-6.13,0-7,2.31-7,6.54v7.44c0,8.26-5.35,11.94-12.07,11.94h-2.13v-6.58h.89c3.87,0,4.84-2.36,4.84-6.05v-6.74c0-5.37,2.03-9.23,7.28-10.09-5.43-.88-7.28-4.72-7.28-10.27v-6.73c0-3.75-1.38-6.25-5.02-6.25h-.71v-6.58h2.13c6.08,0,12.07,3.02,12.07,11.83v7.74c0,3.97.83,6.43,7,6.49v7.29Z" style="fill: url(#ui-10);"/>
         </g>
     </svg>
-    <svg v-else-if="name === 'chartre_graphique'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 271.18 195.7">
+    <svg v-else-if="name === 'charte_graphique'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 271.18 195.7">
         <defs>
             <linearGradient id="charte" x1="86.82" y1="91.32" x2="248" y2="91.32" gradientUnits="userSpaceOnUse">
                 <stop offset=".08" stop-color="#d75770"/>

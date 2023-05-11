@@ -8,17 +8,22 @@
     },
     {
         "id": "fsp",
-        "categorie" : "test",
+        "categorie" : "charte_graphique",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eum sequi praesentium aliquid officia voluptates dolore optio quod at sunt illo atque corporis cumque reprehenderit assumenda, eaque nobis odio? Ipsam?"
     },
     {
         "id": "fdp",
-        "categorie" : "testss",
+        "categorie" : "support_visuel",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eum sequi praesentium aliquid officia voluptates dolore optio quod at sunt illo atque corporis cumque reprehenderit assumenda, eaque nobis odio? Ipsam?"
     },
     {
         "id": "black_M",
-        "categorie" : "testsss",
+        "categorie" : "photographie",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eum sequi praesentium aliquid officia voluptates dolore optio quod at sunt illo atque corporis cumque reprehenderit assumenda, eaque nobis odio? Ipsam?"
+    },
+    {
+        "id": "black_M",
+        "categorie" : "alternance",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eum sequi praesentium aliquid officia voluptates dolore optio quod at sunt illo atque corporis cumque reprehenderit assumenda, eaque nobis odio? Ipsam?"
     }
 ]
