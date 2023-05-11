@@ -66,3 +66,13 @@ button {
     cursor: pointer;
 }
 
+
+.shape {
+    position: absolute;
+    z-index: -1;
+}
+
+.shapes {
+    opacity: .85;
+}
+

@@ -10,8 +10,8 @@ const props = defineProps({
 <template>
     <section>
         <div class="shapes">
-            <span></span>
-            <span></span>
+            <span class="shape"></span>
+            <span class="shape"></span>
         </div>
         <div class="content">
             <h2>{{ title }}</h2>
@@ -25,21 +25,13 @@ const props = defineProps({
 
 <style scoped>
 
-
 section {
     text-align: center;
     display: grid;
     gap: 7.5vh;
     margin: 0 auto;
 }
-section > img {
-    width: 100%;
-    height: 87%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-}
+
 section .shapes {
     position: absolute;
     inset: 0;
@@ -52,7 +44,7 @@ section .shapes span {
 }
 
 section .shapes span:first-of-type{
-    inset: 10% 0 50% 0;
+    inset: 0% 0 50% 0;
     background: linear-gradient(to right, 
         var(--secondary-accent-color),
         var(--primary-accent-color)  
@@ -64,13 +56,21 @@ section .shapes span:last-of-type {
         var(--primary-accent-color),  
         var(--secondary-accent-color)
     );
-    transform: scale(-1) translateY(0.2px);
+    transform: scale(-1);
 }
 
-section > .content {
+section .content {
     padding: 6vh 5vw;
-    margin: 10vh 0;
 }
+
+section .content h2 {
+    transform: skewY(10deg) translateY(95px);
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    font-size: 5rem;
+    padding: 2rem 0;
+}
+
 section .container {
     display: flex;
     justify-content: center;

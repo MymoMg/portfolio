@@ -11,11 +11,11 @@ const props = defineProps({
 
 <template>
     <section>
-        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="shape">
             <defs>
                 <linearGradient id="grad1">
-                    <stop offset="0%" stop-color="var(--primary-accent-color-variant)"/>
-                    <stop offset="100%" stop-color="var(--secondary-accent-color-variant)"/>
+                    <stop offset="0%" stop-color="var(--primary-accent-color)"/>
+                    <stop offset="100%" stop-color="var(--secondary-accent-color)"/>
                 </linearGradient>
             </defs>
 
@@ -44,8 +44,6 @@ section {
 }
 
 section > svg {
-    position: absolute;
-    z-index: -1;
     inset: 0;
 }
 
